@@ -9,10 +9,15 @@ public class HelperClass1 {
         StringBuilder sb = new StringBuilder();
 
         for(String s : strings) {
-            sb.append(s).append(delimeter);
+            sb.append(format(s)).append(delimeter);
         }
         sb.delete(sb.length() - 1, sb.length());
 
         return sb.toString();
+    }
+
+    //add more method helper here
+    public static String format(String raw) {
+        return raw.trim();
     }
 }
